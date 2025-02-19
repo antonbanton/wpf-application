@@ -94,9 +94,9 @@ namespace WPFAppCaliburnMicro
             kernel.Inject(instance);
         }
 
-        protected override void OnStartup(object sender, StartupEventArgs e)
+        protected override async void OnStartup(object sender, StartupEventArgs e)
         {
-            DisplayRootViewFor<IMainViewModel>();
+           await DisplayRootViewForAsync<IMainViewModel>();
         }
     }
 }
